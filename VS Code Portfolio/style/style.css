@@ -1,0 +1,523 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
+/*Общие стили*/
+
+html{
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Manrope", sans-serif;
+    background-color: #fff0f0;
+    color: #959595;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1.5;
+    letter-spacing: -0.5px; 
+
+}
+
+img{
+    
+   max-width: 100%;
+   
+}
+
+a {
+    color: #DEDEDE;
+    transition: opacity 0.3s;
+}
+
+a:hover {
+    opacity: 0.6;
+}
+.container {
+    max-width: 1250px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 15px;
+}
+
+.btn {
+    
+    /* hi@yourname.com */
+    display: inline-flex;
+    align-items: center;
+    gap: 16px;
+    
+    
+    font-size: 18px;
+    color: #FFFFFF;
+    background-color: #545252;
+    padding: 16px 48px;
+    border-radius: 4px;
+    }
+    
+    .btn::before{
+        content: "";
+        width: 21px;
+        height: 21px;
+    
+        background-image: url(/images/mail.svg);
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    .socials {
+        display: flex;
+        gap: 40px;
+    }
+
+
+    
+    .burger__menu {
+
+        display: none;
+    
+    }
+    
+    .burger-menu__icon {
+    
+    }
+
+    /*Конец Общие стили*/
+
+.header {
+background: rgba(50, 50, 50, 0.7);
+backdrop-filter: blur(10px);
+padding: 20px 0;
+margin-bottom: 129px;
+
+}
+.header .container {
+display: flex;
+align-items: center;
+justify-content: space-between;
+
+}
+
+.logo {
+    font-weight: 800;
+    
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+}
+
+.header__nav {
+display: flex;
+gap: 60px;
+
+}
+
+.header__link {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+
+.welcome .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 145px;
+    
+}
+
+.welcome__title {
+    /* Hi, I am Your Name A Product Designer based in City. */
+
+width: 500px;
+
+font-weight: 700;
+font-size: 54px;
+line-height: 1.19;
+color:  #36343E;
+margin-bottom: 24px;
+
+
+}
+
+.welcome__text {
+    width: 395px;
+    margin-bottom: 88px;
+}
+
+
+
+.welcome__img {
+    /* unsplash:XHVpWcr5grQ */
+width: 500px;
+height: 500px;
+background: url(.jpg), #494949;
+border-radius: 50%;
+margin-right: 105px;
+}
+
+/*--------------
+WORKS
+---------------*/
+
+.works {
+position: relative;
+}
+
+.container {
+
+}
+
+.works__btn {
+
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background-color: transparent;
+    border: none;
+    margin-bottom: 80px;
+
+    /* WorkS */
+
+font-family: 'Manrope';
+font-weight: 700;
+font-size: 16px;
+letter-spacing: 1.5px;
+text-transform: uppercase;
+opacity: 0.7;
+
+
+
+}
+
+.works__icon {
+
+}
+
+.works__wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+    padding-top: 140px;
+    margin-bottom: 240px;
+}
+
+.work:nth-child(odd) {
+    margin-top: -140px;
+}
+
+.work {
+    height: 888px;
+    position: relative;
+}
+
+.work:hover{
+    opacity: 1;
+}
+
+.work__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+
+}
+
+.work__name {
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-weight: 700;
+    font-size: 40px;
+
+    background-color: rgba(0, 0, 0, 0.6);
+    transition: 0.3s;
+    color: #DEDEDE;
+}
+
+.work:hover .work__name{
+    opacity: 1;
+}
+
+/*--------------
+skills
+---------------*/
+
+
+.skills {
+    margin-bottom: 240px;
+
+}
+
+
+.skills__title {
+ margin-bottom: 65px;
+ font-size: 36px;
+ color: #36343E;
+ text-align: center;
+}
+
+.skills__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+
+}
+
+.skills__img {
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+    object-position: center;
+
+}
+ .skills--vertical .skills__img {
+    height: 560px;
+}
+
+/*--------------
+CONTACT
+---------------*/
+
+.contact .container {
+
+    max-width: 520px;
+    margin-bottom: 120px;
+    text-align: center;
+
+}
+
+.contact__title {
+margin-bottom: 24px;
+color: #36343E;
+}
+
+.contact__text {
+font-size: 26px;
+margin-bottom: 50px;
+}
+
+
+/*--------------
+FOOTER
+---------------*/
+
+
+.footer {
+    border-top: 1px solid #696969;
+    padding: 40px 0;
+}
+
+.footer .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.footer__text {
+    /* Made by Your Name — Copyright 2021 */
+font-weight: 600;
+font-size: 16px;
+color: #959595;
+}
+
+span{
+color: #36343E;
+}
+
+
+/* ADAPTATION ----------
+----------------------*/
+
+@media (max-width:1100px){
+    .welcome__img {
+        margin-right: 0;
+ } 
+}
+
+@media (max-width:950px){
+    .welcome .container {
+        flex-direction:column-reverse;
+        gap: 65px;
+    } 
+
+    .header{
+        margin-bottom: 70px;
+    }
+
+    .welcome__title{
+        width: auto;
+    }
+
+    .welcome__text{
+        width: auto;
+        margin-bottom: 50px;
+    }
+
+    .welcome__desc {
+        text-align: center;
+    }
+
+  .work{
+
+    height: 600px;
+  }
+}
+
+@media (max-width:850px){
+     
+ .skills__img{
+    width: 300px;
+    height: 300px;
+    }
+
+    .works__wrapper, .skills, .contact {
+        margin-bottom: 100px;
+    }
+}
+
+@media (max-width:770px){
+
+    .welcome .container{
+        margin-bottom: 100px;
+    }
+
+    .welcome__title{
+        font-size: 36px;
+    }
+
+}
+
+@media (max-width:700px){
+
+    .footer .container{
+        flex-direction: column-reverse;
+        align-items: center;
+        gap: 35px;
+}
+
+.work__name{
+    opacity: 1;
+}
+}
+
+@media (max-width:650px){
+    .skills__img{
+        width: 100%;
+        height: 360px;
+    }
+
+    .works__wrapper{
+        grid-template-columns: 1fr;
+        padding-top: 0;
+    }
+
+    .work:nth-child(odd){
+        margin-top: 0;
+    }
+}
+
+@media (max-width:500px){
+
+    .header{
+        position: relative;
+    }
+
+    
+    .burger__menu {
+
+        display: block;
+        background-color: transparent;
+        padding: 0;
+        border: none;
+
+        position: absolute;
+        top: 29px;
+        right: 15px;
+    
+    }
+    
+    .burger-menu__icon {
+    
+    }
+
+    .header.header--mobile .header__nav{
+        display: flex;
+        align-self: center;
+        flex-wrap: wrap;
+        gap: 20px;
+
+    }
+    .header.header--mobile .container{
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px 30px;
+        justify-content: center;
+    }
+
+
+    .header__nav{
+        display: none;
+    }
+
+    .welcome__img{
+        width: 240px;
+        height: 240px;
+    }
+
+    .btn {
+        padding: 16px 20px;
+    }
+
+    .works__btn{
+        margin-bottom: 40px;
+    }
+
+    .work__name{
+        font-size: 28px;
+    }
+
+    .title {
+        font-size: 28px;
+    }
+
+    .skills__title {
+        margin-bottom: 35px;
+    }
+
+   .contact__title{
+        margin-bottom: 12px;
+       
+    }
+
+    .contact .container{
+        max-width: 270px;
+     
+    }
+
+    .contact__text{
+        font-size: 18px;
+       
+    }
+
+    .contact{
+        margin-bottom: 100px;
+    }
+}
+
+@media (max-width:430px){
+    .welcome__title{
+        font-size: 30px;
+    }
+
+}
+
