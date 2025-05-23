@@ -58,7 +58,7 @@ a:hover {
         width: 21px;
         height: 21px;
     
-        background-image: url(/images/mail.svg);
+        background-image: url(images/mail.svg);
         background-size: contain;
         background-position: center;
         background-repeat: no-repeat;
